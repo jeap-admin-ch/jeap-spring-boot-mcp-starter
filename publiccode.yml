@@ -1,0 +1,38 @@
+publiccodeYmlVersion: 0.5.0
+name: jeap-spring-boot-mcp-starter
+applicationSuite: jEAP
+softwareVersion: 1.0.0
+releaseDate: 2026-11-03
+url: "https://github.com/jeap-admin-ch/jeap-spring-boot-mcp-starter.git"
+landingURL: "https://github.com/jeap-admin-ch/jeap"
+platforms:
+  - web
+categories:
+  - application-development
+developmentStatus: development
+softwareType: library
+organisation:
+  uri: https://ld.admin.ch/office/V.1.7
+  name: Federal Office of Information Technology, Systems and Telecommunication
+description:
+  en:
+    localisedName: jeap-spring-boot-mcp-starter
+    shortDescription: Spring Boot starter for exposing jEAP service tools via MCP (Model Context Protocol).
+    longDescription: >
+      jEAP Spring Boot MCP Starter is a library based on Spring Boot and Spring AI that lets jEAP services expose their
+      tools via the Model Context Protocol (MCP), with shared authentication, authorization, protection limits and
+      operations support.
+    features:
+      - MCP server profile based on Spring AI (WebMVC, SYNC, STATELESS)
+      - Integration with the jEAP security starter
+legal:
+  license: Apache-2.0
+maintenance:
+  type: internal
+  contacts:
+    - name: Federal Office of Information Technology, Systems and Telecommunication FOITT
+      email: jeap-community@bit.admin.ch
+localisation:
+  localisationReady: false
+  availableLanguages:
+    - en

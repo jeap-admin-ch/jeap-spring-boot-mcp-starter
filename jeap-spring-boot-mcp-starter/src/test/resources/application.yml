@@ -1,0 +1,41 @@
+spring:
+  autoconfigure:
+    exclude: ch.admin.bit.jeap.security.test.resource.configuration.PermitAllWebSecurityConfiguration
+  application:
+    name: mcp-test
+  ai:
+    mcp:
+      server:
+        name: mcp-test
+        type: SYNC
+        protocol: STATELESS
+        stateless:
+          mcp-endpoint: /mcp
+        annotation-scanner:
+          enabled: true
+
+jeap:
+  security:
+    oauth2:
+      resourceserver:
+        authorization-server:
+          issuer: http://localhost/auth
+  mcp:
+    security:
+      resource-uri: https://test.example.ch/mcp
+    tools:
+      sleep:
+        timeout: 400ms
+      hold:
+        max-concurrent-calls: 1
+      big:
+        max-response-size: 1KB
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+  otlp:
+    tracing:
+      export:
+        enabled: false
