@@ -44,7 +44,7 @@
 
     <properties>
         <maven.javadoc.skip>false</maven.javadoc.skip>
-        <jeap-starter.version>25.32.0</jeap-starter.version>
+        <jeap-starter.version>25.33.0</jeap-starter.version>
     </properties>
 
     <dependencyManagement>
