@@ -47,13 +47,13 @@ the jEAP parent already pins, with no pre-release dependency in the mix.
 3. Before taking a pre-release of Spring AI, check which Spring Boot version it actually requires and
    cross-check it against the jEAP parent's current pin first -- see "Why the stable release" above.
 4. If the new MCP SDK version negotiates a different protocol version, re-run the real-client checks in
-   [`jme-mcp-example`](https://github.com/jeap-admin-ch/jme-mcp-example) (see its README's "Verified with real
+   [`jme-mcp-example`](https://github.com/jme-admin-ch/jme-mcp-example) (see its README's "Verified with real
    clients" section) rather than assuming compatibility from the SDK changelog alone.
 
 ## Client compatibility
 
 Client-side compatibility (Copilot, Codex CLI, Claude Code) is verified separately, against a running example
 service rather than in this repository's own test suite: see
-[`jme-mcp-example`](https://github.com/jeap-admin-ch/jme-mcp-example)'s README for the exact client versions
+[`jme-mcp-example`](https://github.com/jme-admin-ch/jme-mcp-example)'s README for the exact client versions
 tested, the setup steps per client, and what each one was actually able to do (connect, log in, discover tools,
 call them).
